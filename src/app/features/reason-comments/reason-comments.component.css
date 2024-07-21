@@ -1,0 +1,57 @@
+/* Styles for Reason Comments Component */
+
+/* Container for the form */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Input fields styling */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Buttons styling */
+button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Exit button specific styling */
+button.exit {
+  background-color: #dc3545;
+}
+
+button.exit:hover {
+  background-color: #c82333;
+}
+
+/* View Data Enrichment button specific styling */
+button.view-data-enrichment {
+  background-color: #28a745;
+}
+
+button.view-data-enrichment:hover {
+  background-color: #218838;
+}

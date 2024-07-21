@@ -1,0 +1,25 @@
+<div class="customer-call-history">
+  <h2>Customer Call History</h2>
+  <div class="call-history-table" style="overflow-y: auto; max-height: 400px;">
+    <table>
+      <thead>
+        <tr>
+          <th>Call Date</th>
+          <th>Caller ID</th>
+          <th>Status</th>
+          <th>Sub Status</th>
+          <th>Proposal Medical Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let record of callHistory | slice:0:4">
+          <td>{{ record.call_date }}</td>
+          <td>{{ record.caller_id }}</td>
+          <td>{{ record.status }}</td>
+          <td>{{ record.sub_status }}</td>
+          <td>{{ record.proposal_medical_status }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

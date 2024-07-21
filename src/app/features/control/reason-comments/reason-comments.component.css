@@ -1,0 +1,44 @@
+/* Styles for the Reason Comments component */
+
+/* Container for the reason comments section */
+.reason-comments-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Individual comment item */
+.comment-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Comment details */
+.comment-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Reason text */
+.reason-text {
+  font-weight: bold;
+}
+
+/* Comment text */
+.comment-text {
+  margin-top: 5px;
+}
+
+/* User ID and Comment Date */
+.user-id, .comment-date {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* First comment item highlight */
+.comment-item:first-child {
+  background-color: #e6f7ff;
+}

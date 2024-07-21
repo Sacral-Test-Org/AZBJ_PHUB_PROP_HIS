@@ -1,0 +1,26 @@
+/* CSS for the UW section */
+
+.uw-section {
+  display: flex;
+  flex-direction: column;
+  max-height: 200px; /* Adjust as needed to show 6 records */
+  overflow-y: auto;
+}
+
+.uw-field {
+  background-color: white;
+  color: black;
+  text-align: right;
+  max-width: 2000px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+
+.requirement-despatch-window {
+  resize: none;
+  overflow: hidden;
+}

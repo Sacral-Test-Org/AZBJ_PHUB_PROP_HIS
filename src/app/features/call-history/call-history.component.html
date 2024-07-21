@@ -1,0 +1,66 @@
+<div class="call-history-container">
+  <table class="call-history-table">
+    <thead>
+      <tr>
+        <th>Request Number</th>
+        <th>Main Status</th>
+        <th>Sub Status</th>
+        <th>Approval Remarks</th>
+        <th>Caller ID</th>
+        <th>Call Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let call of callHistory; let i = index" [hidden]="i >= 7">
+        <td>{{ call.requestNumber }}</td>
+        <td>{{ call.mainStatus }}</td>
+        <td>{{ call.subStatus }}</td>
+        <td>{{ call.approvalRemarks }}</td>
+        <td>{{ call.callerId }}</td>
+        <td>{{ call.callTime }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div *ngIf="callHistory.length > 7" class="scrollbar">
+    <button (click)="scrollUp()">&#9650;</button>
+    <button (click)="scrollDown()">&#9660;</button>
+  </div>
+</div>
+
+<style>
+.call-history-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.call-history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.call-history-table th, .call-history-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.call-history-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.scrollbar {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.scrollbar button {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.scrollbar button:hover {
+  background-color: #ddd;
+}
+</style>

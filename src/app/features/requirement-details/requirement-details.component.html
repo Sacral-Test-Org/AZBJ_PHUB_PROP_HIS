@@ -1,0 +1,42 @@
+<div class="requirement-details">
+  <div class="requirement-field">
+    <label for="reqType">Requirement Type:</label>
+    <input id="reqType" type="text" [value]="requirement.REQ_TYPE" readonly />
+  </div>
+  <div class="requirement-field">
+    <label for="reqDesc">Requirement Description:</label>
+    <textarea id="reqDesc" [value]="requirement.REQ_DESC" readonly></textarea>
+  </div>
+  <div class="requirement-field">
+    <label for="raiseDate">Raise Date:</label>
+    <input id="raiseDate" type="text" [value]="requirement.RAISE_DATE" readonly />
+  </div>
+  <div class="uw-section">
+    <app-uw-section></app-uw-section>
+  </div>
+</div>
+
+<style>
+.requirement-details {
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.requirement-field {
+  margin-bottom: 10px;
+}
+.requirement-field label {
+  display: block;
+  font-weight: bold;
+}
+.requirement-field input,
+.requirement-field textarea {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.uw-section {
+  margin-top: 20px;
+}
+</style>

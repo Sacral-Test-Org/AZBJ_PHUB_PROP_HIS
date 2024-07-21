@@ -1,0 +1,17 @@
+<div class="approval-details-container">
+  <h2>Approval Records</h2>
+  <div class="approval-grid">
+    <div class="approval-record" *ngFor="let record of approvalRecords; let i = index" [hidden]="i >= 8">
+      <div class="approval-field">{{ record.approvalId }}</div>
+      <div class="approval-field">{{ record.approvalName }}</div>
+      <div class="approval-field">{{ record.approvalDate }}</div>
+      <div class="approval-field">{{ record.approvalTime }}</div>
+      <div class="approval-field">{{ record.approvalDecision }}</div>
+    </div>
+  </div>
+  <div class="scrollbar" *ngIf="approvalRecords.length > 8">
+    <button (click)="scrollUp()">&#9650;</button>
+    <button (click)="scrollDown()">&#9660;</button>
+  </div>
+  <button class="exit-button" (click)="exitView()">Exit</button>
+</div>

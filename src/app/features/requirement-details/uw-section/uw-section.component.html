@@ -1,0 +1,10 @@
+<div class="requirement-despatch" style="overflow: hidden;">
+  <div class="uw-section" style="max-height: 200px; overflow-y: auto;">
+    <div *ngFor="let record of uwRecords; let i = index" 
+         [ngStyle]="{'text-align': 'right', 'background-color': 'white', 'color': 'black'}"
+         style="padding: 10px; border-bottom: 1px solid #ccc;" 
+         *ngIf="i < 6">
+      {{ record.uwField | slice:0:2000 }}
+    </div>
+  </div>
+</div>

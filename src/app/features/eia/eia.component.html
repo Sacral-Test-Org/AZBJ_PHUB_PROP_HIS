@@ -1,0 +1,50 @@
+<div class="eia-container">
+  <h1>EIA Process Status and Details</h1>
+  <div *ngFor="let step of eiaProcessSteps" class="eia-step">
+    <div class="eia-status">
+      <strong>Status:</strong> {{ step.status }}
+    </div>
+    <div class="eia-description">
+      <strong>Description:</strong> {{ step.description }}
+    </div>
+    <div class="eia-user">
+      <strong>User:</strong> {{ step.user }}
+    </div>
+    <div class="eia-date">
+      <strong>Date:</strong> {{ step.date | date:'short' }}
+    </div>
+  </div>
+  <button (click)="exit()" class="exit-button">Exit</button>
+</div>
+
+<style>
+.eia-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.eia-step {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.eia-status, .eia-description, .eia-user, .eia-date {
+  margin-bottom: 5px;
+}
+
+.exit-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+</style>

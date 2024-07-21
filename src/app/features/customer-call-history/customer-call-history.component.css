@@ -1,0 +1,46 @@
+.customer-call-history {
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.customer-call-history .record {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.customer-call-history .record:last-child {
+  border-bottom: none;
+}
+
+.customer-call-history .field {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.customer-call-history .field label {
+  font-weight: bold;
+}
+
+.customer-call-history .field span {
+  flex: 1;
+  text-align: right;
+}
+
+.customer-call-history .field.read-only {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.customer-call-history .error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}

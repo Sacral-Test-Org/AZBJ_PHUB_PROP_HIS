@@ -1,0 +1,17 @@
+<div class="task-assignment-container">
+  <h2>Task Assignment Management</h2>
+  <form>
+    <div class="form-group">
+      <label for="personName">Person Name:</label>
+      <input type="text" id="personName" name="personName" [(ngModel)]="personName" required>
+    </div>
+    <div class="form-group">
+      <label for="assignedDate">Assigned Date:</label>
+      <input type="date" id="assignedDate" name="assignedDate" [(ngModel)]="assignedDate" required>
+    </div>
+    <div class="form-actions">
+      <button type="submit" (click)="saveAssignment()">Save</button>
+      <button type="button" (click)="exitAssignment()">Exit</button>
+    </div>
+  </form>
+</div>

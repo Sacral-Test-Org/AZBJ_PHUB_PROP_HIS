@@ -1,0 +1,109 @@
+/* Purpose: To style the control block. */
+
+/* Purpose: To style the centralized interface for users to view and manage various details related to receipts, applications, and policies. */
+
+/* Purpose: To update styles if necessary for the receipt number field. */
+.receipt-number-field {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Purpose: To style the scrutiny number field and its prompt according to the specified criteria. */
+.scrutiny-number-field {
+  text-align: left;
+  background-color: white;
+  color: black;
+  max-width: 300px;
+}
+
+.scrutiny-number-prompt {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Purpose: To style the "Proposal Number" field with the specified visual properties. */
+.proposal-number-field {
+  background-color: white;
+  color: black;
+  text-transform: capitalize;
+  max-width: 200px;
+}
+
+/* Purpose: To style the "Exit" button if necessary. */
+.exit-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Purpose: To update styles if necessary. */
+.hidden-field {
+  display: none;
+}
+
+.clear-button {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Purpose: To style the new UI elements for search functionality. */
+.search-input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.search-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Purpose: To style the new elements for email log history. */
+.email-log-history {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.successful-emails-count {
+  font-weight: bold;
+  color: green;
+}
+
+/* Purpose: Apply the specified visual styling (white background, black text, Tahoma font). */
+.delivery-date-field {
+  background-color: white;
+  color: black;
+  font-family: Tahoma, sans-serif;
+  text-align: right;
+  max-width: 300px;
+}

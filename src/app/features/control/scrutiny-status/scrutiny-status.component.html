@@ -1,0 +1,20 @@
+<div class="scrutiny-status-container">
+  <h2>Scrutiny Status Details</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Reason</th>
+        <th>User ID</th>
+        <th>Comment Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let record of scrutinyStatusRecords">
+        <td>{{ record.reason }}</td>
+        <td>{{ record.userId }}</td>
+        <td>{{ record.commentDate | date:'short' }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button (click)="exitButtonHandler()">Exit</button>
+</div>

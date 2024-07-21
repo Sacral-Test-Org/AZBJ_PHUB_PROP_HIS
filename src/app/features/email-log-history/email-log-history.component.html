@@ -1,0 +1,26 @@
+<div class="email-log-history">
+  <table>
+    <thead>
+      <tr>
+        <th>E-Mail Status</th>
+        <th>Date and Time of E-Mail Sent</th>
+        <th>Registered E-Mail ID</th>
+        <th>Type of Letter</th>
+        <th>Number of Successful Mails</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let log of emailLogs | slice:0:7">
+        <td contenteditable="true">{{ log.emailStatus }}</td>
+        <td>{{ log.dateTimeSent | date:'short' }}</td>
+        <td>{{ log.registeredEmailId }}</td>
+        <td>{{ log.typeOfLetter }}</td>
+        <td>{{ log.numberOfSuccessfulMails }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="pagination-controls">
+    <button (click)="previousPage()" [disabled]="currentPage === 1">Previous</button>
+    <button (click)="nextPage()" [disabled]="currentPage * 7 >= emailLogs.length">Next</button>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="search-application-container">
+  <h2>Search Application</h2>
+  <form (ngSubmit)="onSearch()">
+    <div class="form-group">
+      <label for="applicationNumber">Application Number</label>
+      <input type="text" id="applicationNumber" name="applicationNumber" [(ngModel)]="searchCriteria.applicationNumber" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="receiptNumber">Receipt Number</label>
+      <input type="text" id="receiptNumber" name="receiptNumber" [(ngModel)]="searchCriteria.receiptNumber" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="proposalNumber">Proposal Number</label>
+      <input type="text" id="proposalNumber" name="proposalNumber" [(ngModel)]="searchCriteria.proposalNumber" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="scrutinyNumber">Scrutiny Number</label>
+      <input type="text" id="scrutinyNumber" name="scrutinyNumber" [(ngModel)]="searchCriteria.scrutinyNumber" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="biNumber">BI Number</label>
+      <input type="text" id="biNumber" name="biNumber" [(ngModel)]="searchCriteria.biNumber" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+    <button type="button" class="btn btn-secondary" (click)="onExit()">Exit</button>
+  </form>
+  <div *ngIf="applicationDetails">
+    <h3>Application Details</h3>
+    <p><strong>Status:</strong> {{ applicationDetails.status }}</p>
+    <p><strong>Flags:</strong> {{ applicationDetails.flags }}</p>
+    <p><strong>Policy Dispatch Status:</strong> {{ applicationDetails.policyDispatchStatus }}</p>
+    <p><strong>Competition Details:</strong> {{ applicationDetails.competitionDetails }}</p>
+    <p><strong>Agent Details:</strong> {{ applicationDetails.agentDetails }}</p>
+    <p><strong>Comments:</strong> {{ applicationDetails.comments }}</p>
+  </div>
+  <div *ngIf="noRecordsFound">
+    <p>No records found for the provided search criteria.</p>
+  </div>
+</div>

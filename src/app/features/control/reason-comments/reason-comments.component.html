@@ -1,0 +1,22 @@
+<div class="reason-comments-section">
+  <h2>Reason Comments</h2>
+  <button (click)="viewDataEnrichment()">View Data Enrichment</button>
+  <table>
+    <thead>
+      <tr>
+        <th>Reason</th>
+        <th>Comments</th>
+        <th>User ID</th>
+        <th>Comment Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let comment of reasonComments">
+        <td>{{ comment.reason }}</td>
+        <td>{{ comment.comments }}</td>
+        <td>{{ comment.userId }}</td>
+        <td>{{ comment.commentDate | date }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

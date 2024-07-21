@@ -1,0 +1,52 @@
+/* Styles for the scrutiny status view */
+
+.scrutiny-status-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.scrutiny-status-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.scrutiny-status-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.scrutiny-status-table th, .scrutiny-status-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.scrutiny-status-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.scrutiny-status-row {
+  transition: background-color 0.3s ease;
+}
+
+.scrutiny-status-row:hover {
+  background-color: #f1f1f1;
+}
+
+.scrutiny-status-exit-button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.scrutiny-status-exit-button:hover {
+  background-color: #0056b3;
+}

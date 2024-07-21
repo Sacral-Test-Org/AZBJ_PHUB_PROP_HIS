@@ -1,0 +1,79 @@
+/* Styles for the tele-verification history section */
+
+/* Container for the tele-verification history */
+.tele-verification-history-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+.tele-verification-history-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Styles for the input fields */
+.tele-verification-history-input {
+  margin-bottom: 15px;
+}
+
+.tele-verification-history-input label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.tele-verification-history-input input,
+.tele-verification-history-input textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Styles for the scrollable view */
+.tele-verification-history-scrollable {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+/* Styles for individual history records */
+.tele-verification-history-record {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.tele-verification-history-record:last-child {
+  border-bottom: none;
+}
+
+/* Exit button styles */
+.tele-verification-history-exit-button {
+  display: block;
+  width: 100px;
+  padding: 10px;
+  margin: 20px auto 0;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tele-verification-history-exit-button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,45 @@
+<div class="tele-verification-history">
+  <h2>Tele-Verification History</h2>
+  <form>
+    <div>
+      <label for="userId">User ID:</label>
+      <input type="text" id="userId" name="userId" maxlength="50">
+    </div>
+    <div>
+      <label for="dateTime">Date and Time:</label>
+      <input type="text" id="dateTime" name="dateTime" placeholder="dd-mon-yyyy hh:mi:ss">
+    </div>
+    <div>
+      <label for="teleVerificationComments">Tele-verification Comments:</label>
+      <textarea id="teleVerificationComments" name="teleVerificationComments" maxlength="700"></textarea>
+    </div>
+    <div>
+      <label for="teleVerificationStatus">Tele-verification Status:</label>
+      <input type="text" id="teleVerificationStatus" name="teleVerificationStatus" maxlength="100">
+    </div>
+    <div>
+      <label for="userComments">User Comments:</label>
+      <textarea id="userComments" name="userComments" maxlength="300"></textarea>
+    </div>
+    <button type="button" (click)="exitForm()">Exit</button>
+  </form>
+  <div class="history-list" style="max-height: 400px; overflow-y: scroll;">
+    <div *ngFor="let history of teleVerificationHistory | slice:0:10">
+      <p>User ID: {{history.userId}}</p>
+      <p>Date and Time: {{history.dateTime}}</p>
+      <p>Tele-verification Comments: {{history.teleVerificationComments}}</p>
+      <p>Tele-verification Status: {{history.teleVerificationStatus}}</p>
+      <p>User Comments: {{history.userComments}}</p>
+    </div>
+  </div>
+</div>
+
+<div id="call-history-view" style="display: none;">
+  <!-- Call history content here -->
+</div>
+
+<script>
+  function hideCallHistory() {
+    document.getElementById('call-history-view').style.display = 'none';
+  }
+</script>

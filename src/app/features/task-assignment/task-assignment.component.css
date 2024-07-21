@@ -1,0 +1,49 @@
+/* Styles for Task Assignment Management Component */
+
+/* Container for the task assignment form */
+.task-assignment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Input fields styling */
+.task-assignment-container input[type="text"],
+.task-assignment-container input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button styling */
+.task-assignment-container button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.task-assignment-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Exit button styling */
+.task-assignment-container .exit-button {
+  background-color: #dc3545;
+}
+
+.task-assignment-container .exit-button:hover {
+  background-color: #c82333;
+}

@@ -1,0 +1,51 @@
+/* Styles for the grid layout */
+.approval-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin: 20px;
+}
+
+/* Styles for each grid item */
+.approval-grid-item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Styles for the scrollbar */
+.approval-grid-container {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Custom scrollbar styles */
+.approval-grid-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.approval-grid-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.approval-grid-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Styles for the 'Exit' button */
+.exit-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.exit-button:hover {
+  background-color: #c9302c;
+}

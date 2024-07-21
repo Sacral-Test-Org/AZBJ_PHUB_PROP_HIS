@@ -1,0 +1,63 @@
+/* EIA Component Styles */
+
+.eia-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.eia-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.eia-step {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.eia-step:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.eia-step:nth-child(odd) {
+  background-color: #fff;
+}
+
+.eia-step-status {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.eia-step-description {
+  flex: 1;
+  margin-left: 20px;
+  color: #555;
+}
+
+.eia-step-user {
+  color: #888;
+}
+
+.eia-step-date {
+  color: #888;
+}
+
+.exit-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.exit-button:hover {
+  background-color: #0056b3;
+}
